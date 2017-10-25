@@ -20,7 +20,7 @@ import {
 } from 'native-base';
 
 const VacancyListItem = ({ vacancy, onViewJob }) => (
-  <ListItem button={true} onPress={()=> onViewJob } >
+  <ListItem style={{ marginLeft: 0, paddingLeft: 17 }} button={true} onPress={()=> onViewJob } >
     <Thumbnail square size={80} source={{
       uri: 'http://loremflickr.com/80/80/dog'
     }}/>

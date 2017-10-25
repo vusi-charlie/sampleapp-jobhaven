@@ -3,10 +3,10 @@
 import React, { Component } from 'react';
 import { Container, Body ,Header, Content, Icon ,Button ,Form, Item, Input, Label, Left } from 'native-base';
 
-export default class ChatScreen extends Component {
+export default class NotificationsScreen extends Component {
 
   static navigationOptions = {
-    title :"Chat",
+    title :"Notifications",
     headerTintColor: "white",
     headerStyle: {
       backgroundColor: "#334393"

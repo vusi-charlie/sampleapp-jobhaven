@@ -6,13 +6,15 @@ import { StackNavigator } from 'react-navigation';
 import  SearchScreen  from './src/components/screens/SearchScreen';
 
 import  HomeScreen from './src/components/screens/HomeScreen';
-import  ChatScreen from './src/components/screens/ChatScreen';
+import  NotificationsScreen from './src/components/screens/NotificationsScreen';
+import  SettingsScreen from './src/components/screens/SettingsScreen';
 
 
 const AppNavigator = StackNavigator({
   Home: { screen: HomeScreen },
-  Chat: { screen: ChatScreen },
+  Notifications: { screen: NotificationsScreen },
   Search: { screen: SearchScreen},
+  Settings: { screen: SettingsScreen},
   // Vacancy: { screen: VacancyScreen }
 }, {
    headerMode: "screen" ,

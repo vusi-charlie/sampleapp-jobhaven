@@ -22,7 +22,8 @@ import {
   Item,
   Grid,
   Col,
-  Row
+  Row,
+  Badge
 } from 'native-base';
 
 import VacancyListItem from '../elements/VacancyListItem';
@@ -33,15 +34,16 @@ export default class HomeScreen extends Component {
         <Body>
           <Title>Job Haven</Title>
         </Body>
+
         <Right>
           <Button transparent onPress={() => navigation.navigate('Search')}>
             <Icon name="search"/>
           </Button>
-          <Button transparent onPress={() => navigation.navigate('Chat')}>
+          <Button transparent  badge onPress={() => navigation.navigate('Notifications')}>
             <Icon name="md-notifications"/>
+          <Badge><Text>1</Text></Badge>
           </Button>
-          <Button transparent onPress={() => navigation.navigate('Chat')}>
-
+          <Button transparent onPress={() => navigation.navigate('Settings')}>
             <Icon name="md-options"/>
           </Button>
         </Right>
