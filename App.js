@@ -1,6 +1,7 @@
 import React from 'react';
 import Expo, { Font } from 'expo';
 import AppNavigator from './AppNavigator';
+import AuthNavigator from './AuthNavigator';
 import { Drawer } from 'native-base';
 
 export default class App extends React.Component {
@@ -8,7 +9,8 @@ export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      isReady: false
+      isReady: false,
+      isAuth: false
     };
   }
 
@@ -25,6 +27,6 @@ export default class App extends React.Component {
     if (!this.state.isReady) {
       return <Expo.AppLoading />;
     }
-    return <AppNavigator />
+    return <AuthNavigator />
   }
 }
