@@ -13,7 +13,6 @@ export default class App extends React.Component {
       isAuth: false
     };
   }
-
   async componentWillMount() {
     await Expo.Font.loadAsync({
       Roboto: require("native-base/Fonts/Roboto.ttf"),
