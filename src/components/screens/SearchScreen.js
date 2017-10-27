@@ -23,7 +23,7 @@ export default class SearchScreen extends Component {
     return (
 
       <Container>
-           <Content>
+           <Content padder>
                <Card>
                    <CardItem>
                        <Text>
@@ -46,7 +46,7 @@ export default class SearchScreen extends Component {
                    </CardItem>
                </Card>
            </Content>
-        
+
          </Container>
 
     );
