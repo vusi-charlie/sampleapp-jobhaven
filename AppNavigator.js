@@ -8,6 +8,7 @@ import  SearchScreen  from './src/components/screens/SearchScreen';
 import  HomeScreen from './src/components/screens/HomeScreen';
 import  NotificationsScreen from './src/components/screens/NotificationsScreen';
 import  SettingsScreen from './src/components/screens/SettingsScreen';
+import  VacancyScreen from './src/components/screens/VacancyScreen';
 
 
 const AppNavigator = StackNavigator({
@@ -15,7 +16,7 @@ const AppNavigator = StackNavigator({
   Notifications: { screen: NotificationsScreen },
   Search: { screen: SearchScreen},
   Settings: { screen: SettingsScreen},
-  // Vacancy: { screen: VacancyScreen }
+  Vacancy: { screen: VacancyScreen },
 }, {
    headerMode: "screen" ,
    headerTintColor: "white",

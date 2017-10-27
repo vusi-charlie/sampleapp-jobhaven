@@ -60,11 +60,11 @@ export default class HomeScreen extends Component {
               <List>
                <VacancyListItem
                  vacancy={{ jobTitle:"IT Engineer" ,company: { "imgSrc": "" ,name: "Kubo Inc", location: "Gau, Jhb"}, timeCreated: 1, salary: 15000 }}
-                  onViewJob={ () => Alert.alert("View Job Action handler") } >
+                  onViewJob={ () => this.props.navigation.navigate('Vacancy') } >
                </VacancyListItem>
+
               </List>
             </Content>
-
           </Tab>
           <Tab heading="Applied Jobs">
             <Text>Tab2</Text>
@@ -74,6 +74,7 @@ export default class HomeScreen extends Component {
           </Tab>
         </Tabs>
       </Container>
+
     );
   }
 }

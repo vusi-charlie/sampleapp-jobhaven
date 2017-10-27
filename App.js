@@ -11,6 +11,7 @@ export default class App extends React.Component {
     this.state = {
       isReady: false,
       isAuth: false
+
     };
   }
   async componentWillMount() {
@@ -26,6 +27,6 @@ export default class App extends React.Component {
     if (!this.state.isReady) {
       return <Expo.AppLoading />;
     }
-    return <AuthNavigator />
+    return <AppNavigator />
   }
 }

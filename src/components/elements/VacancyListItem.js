@@ -1,7 +1,8 @@
 /* @flow weak */
 
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import PropTypes from 'prop-types';
+import {StyleSheet, Alert} from 'react-native';
 
 import {
 
@@ -19,8 +20,9 @@ import {
   Row
 } from 'native-base';
 
+
 const VacancyListItem = ({ vacancy, onViewJob }) => (
-  <ListItem style={{ marginLeft: 0, paddingLeft: 17 }} button={true} onPress={()=> onViewJob } >
+  <ListItem style={{ marginLeft: 0, paddingLeft: 17 }} button onPress={ () => onViewJob() } >
     <Thumbnail square size={80} source={{
       uri: 'http://loremflickr.com/80/80/dog'
     }}/>
@@ -44,15 +46,21 @@ const VacancyListItem = ({ vacancy, onViewJob }) => (
           </Row>
            </Col>
            <Col style={{ width: 100}}>
-               <Button style={styles.btnMoreOptions} transparent>
+               <Button  style={styles.btnMoreOptions} transparent>
                  <Icon name="md-more"/>
                </Button>
                <Text note style={ styles.txtSalary }>R { vacancy.salary }</Text>
            </Col>
        </Grid>
     </Body>
+
   </ListItem>
 );
+
+VacancyListItem.propTypes = {
+  vacancy: PropTypes.object.isRequired,
+  onViewJob: PropTypes.func.isRequired
+}
 
 export default VacancyListItem;
 
